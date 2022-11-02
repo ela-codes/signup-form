@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+/* SETUP */
+
 :root {
     --light-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
@@ -11,15 +14,9 @@
     color: #1c1e20;
 }
 
-
-body {
-    background-color: #f5f4f4;
-    height: 100vh;
-}
-
-
 .container {
     display: flex; 
+    background-color: #f5f4f4;
 }
 
 /* SIDEBAR */
@@ -67,10 +64,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
 }
 
 .form-section {
-    width: 100vw;
     margin-top: 2%;
     font-family: sans-serif;
     background-color: white;
@@ -91,7 +88,7 @@ h1 {
 
 header, .form-container, .form-confirmation {
     margin-left: 3%;
-    width: 80%;
+    width: 60%;
 }
 
 header, .form-section, .txt-above-form {
