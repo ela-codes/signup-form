@@ -55,7 +55,7 @@
 
 a {
     text-decoration: none;
-    color: rgb(123, 123, 138);
+    color: rgb(62, 157, 201)
 }
 
 /* PAGE CONTENT */
@@ -75,9 +75,12 @@ a {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
+span {
+    color: rgb(62, 157, 201);
+}
 
 /* FORM */
 
@@ -87,7 +90,7 @@ h1 {
 }
 
 header, .form-container, .form-confirmation {
-    margin-left: 3%;
+    margin-left: 7%;
     width: 60%;
 }
 
@@ -98,10 +101,6 @@ header, .form-section, .txt-above-form {
 label {
     font-size: 14px;
 
-}
-input {
-    height: 30px;
-    width: 250px;
 }
 
 li {
@@ -127,8 +126,29 @@ button {
     border-radius: 8px;
     box-shadow: var(--light-shadow);
 
-    background-color: #191925;
+    background-color: rgb(62, 157, 201);
     color: #f5f4f4;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+/* INPUT STYLING */
+
+input {
+    height: 30px;
+    width: 250px;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
+    outline: none;
+    
+    font-size: 1rem;
+    padding-left: 10px;
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+
+input:focus {
+    box-shadow: var(--light-shadow);
+    border: 2px solid rgb(62, 157, 201);
 }
