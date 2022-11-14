@@ -132,6 +132,18 @@ button {
     font-weight: 600;
 }
 
+button:hover {
+    background-color: rgb(62, 157, 201);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgb(62, 157, 201);
+    box-shadow: 0 2px rgb(170, 175, 175);
+    transform: translateY(2px);
+}
+
+
 /* INPUT STYLING */
 
 input {
