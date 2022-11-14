@@ -5,6 +5,7 @@
 
 :root {
     --light-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    --input-box: 2px solid #E5E7EB;
 }
 
 * {
@@ -14,9 +15,12 @@
     color: #1c1e20;
 }
 
+body {
+    background-color: #f5f4f4;
+}
+
 .container {
     display: flex; 
-    background-color: #f5f4f4;
 }
 
 /* SIDEBAR */
@@ -89,9 +93,9 @@ span {
     padding-bottom: 30px;
 }
 
-header, .form-container, .form-confirmation {
-    margin-left: 7%;
-    width: 60%;
+header, .form-container {
+    margin-left: 5%;
+    width: 80%;
 }
 
 header, .form-section, .txt-above-form {
@@ -100,7 +104,6 @@ header, .form-section, .txt-above-form {
 
 label {
     font-size: 14px;
-
 }
 
 li {
@@ -117,10 +120,14 @@ section {
     margin-bottom: 20px;
 }
 
+.form-confirmation {
+    font-size: 13px;
+}
+
 button {
     width: 230px;
     height: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     border: 1px solid;
     border-radius: 8px;
@@ -148,8 +155,8 @@ button:active {
 
 input {
     height: 30px;
-    width: 250px;
-    border: 2px solid #E5E7EB;
+    width:  15rem;
+    border: var(--input-box);
     border-radius: 5px;
     outline: none;
     
@@ -163,4 +170,24 @@ input {
 input:focus {
     box-shadow: var(--light-shadow);
     border: 2px solid rgb(62, 157, 201);
+}
+
+input::-webkit-input-placeholder {
+    opacity: 0.3; 
+    font-style: italic;
+}
+
+/* PASSWORD */
+
+#eye {
+    margin-left: -22px;
+    cursor: pointer;
+    color: gray;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.pwd-feedback {
+    font-size: 12px;
+    color: rgb(226, 33, 33);
 }
